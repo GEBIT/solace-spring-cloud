@@ -10,7 +10,7 @@ public class SolaceBinderClientInfoProviderTest {
 	@Test
 	public void testSoftwareVersion() {
 		Pattern versionPattern = Pattern.compile("[0-9]+\\.[0-9]+\\.[0-9]+");
-		Pattern pattern = Pattern.compile(String.format("%s(?:-SNAPSHOT)? \\(%s\\)", versionPattern, versionPattern));
+		Pattern pattern = Pattern.compile(String.format("%s(?:-SNAPSHOT)?(?:-gebit[0-9]+) \\(%s\\)", versionPattern, versionPattern));
 		assertThat(new SolaceBinderClientInfoProvider().getSoftwareVersion()).matches(pattern);
 	}
 
