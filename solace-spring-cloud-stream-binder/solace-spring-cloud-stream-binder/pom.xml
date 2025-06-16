@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>spring-cloud-stream-binder-solace</artifactId>
-    <version>5.8.0</version>
+    <version>5.8.0-gebit1</version>
     <packaging>jar</packaging>
 
     <name>Solace Spring Cloud Stream Binder</name>
