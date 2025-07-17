@@ -159,7 +159,7 @@ public class SolaceMessageChannelBinderConfiguration {
 										initSession();
 									}
 									if (jcsmpSession == proxySession) {
-										throw new IllegalStateException("No JCSMP session available");
+										throw new RuntimeException("No JCSMP session available");
 									}
 								}
 							}
